@@ -1,9 +1,2 @@
-askdkjlasdkjkjl@mail.ru 31081996bV
-testemail@gmail.com qwertY123
-Gnup@mail.com 1234567NN
-yyyyshhh@mail.ru SS123456
-works@mail.ru worK12345
-test123@mail.ru tesT1234
-asjdjhj@mail.ru 31081996bV
-testvalid@mail.com testValid123
-asdasd@mail.ru 31081996bV
+testwrite@mail.com testWrite123
+test@mail.com testPassword123
