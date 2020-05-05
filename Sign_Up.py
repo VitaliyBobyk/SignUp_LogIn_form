@@ -38,17 +38,17 @@ def check_p():
 
 def incl():
     vm = check_mail()
-    if vm == None:
-        return
-    else:
+    if vm:
         vp = check_p()
-        total = vm+" " +vp
+        total = vm + " " + vp
         return total
 
 
 def write_to_db():
     f = open('database.txt', 'a')
-    f.write(incl() + '\n')
-    f.close
+    par_func = incl()
+    if par_func != None:
+        f.write(par_func + '\n')
+        f.close
 
 write_to_db()
