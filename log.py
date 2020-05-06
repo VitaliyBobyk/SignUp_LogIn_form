@@ -5,15 +5,20 @@ s = f.read()
 list_db = s.split()
 
 root = Tk()
+root.focus_force()
+
 root.resizable(width=False, height=False)
 root.geometry('300x300')
-root.title('Sign Up')
+root.title('Log In')
 root['bg'] = 'black'
-ei = Entry(root, width=40)
-el = Label(root, text="Enter your e-mail", bg="black",fg='white', width=20)
-pl = Label(root, text="Enter your password", bg="black",fg='white', width=20)
-pi = Entry(root, width=40)
-b = Button(root, text="Log In!!")
+
+ei = Entry(root, width=20, bg="#808080", font='arial 14')
+el = Label(root, text="Enter your e-mail", width=50, height=1, bg="black", fg='white', font='arial 14')
+
+pl = Label(root, text="Enter your password", width=50, height=1, bg="black", fg='white', font='arial 14')
+pi = Entry(root, width=20, bg="#808080", font='arial 14')
+
+b = Button(root, text="Log In!!", width=9, height=1, bg='#808080', fg='white', font='arial 14')
 
 def finish():
     log_in = ei.get()
@@ -31,10 +36,10 @@ def finish():
 
 def leftclick(event):
     finish()
-el.pack()
+el.pack(padx=5, pady=5)
 ei.pack()
-pl.pack()
+pl.pack(padx=5, pady=5)
 pi.pack()
-b.pack()
+b.pack(padx=20, pady=20)
 b.bind('<Button-1>', leftclick)
 root.mainloop()

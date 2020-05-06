@@ -4,18 +4,18 @@ from tkinter import messagebox as mb
 from tkinter import *
 
 root = Tk()
-
+root.focus_force()
 root.resizable(width=False, height=False)
 root.geometry('300x300')
 root.title('Sign Up')
 root['bg'] = 'black'
-ei = Entry(root, width=40)
-el = Label(root, text="Enter your e-mail", bg="black",fg='white', width=20)
-pl = Label(root, text="Enter your password", bg="black",fg='white', width=20)
-pi = Entry(root, width=40)
-cp = Label(root, text="Confirm your password", bg="black",fg='white', width=20)
-ci = Entry(root, width=40)
-b = Button(root, text="Sign Up!")
+ei = Entry(root, width=20, bg="#808080", font='arial 14')
+el = Label(root, text="Enter your e-mail", width=50, height=1, bg="black", fg='white', font='arial 14')
+pl = Label(root, text="Enter your password", width=50, height=1, bg="black", fg='white', font='arial 14')
+pi = Entry(root, width=20, bg="#808080", font='arial 14')
+cp = Label(root, text="Confirm your password", width=50, height=1, bg="black", fg='white', font='arial 14')
+ci = Entry(root, width=20, bg="#808080", font='arial 14')
+b = Button(root, text="Sign Up!",width=9, height=1, bg='#808080', fg='white', font='arial 14')
 
 def check_mail():
     email = ei.get()
@@ -60,12 +60,12 @@ def write_to_db():
 
 def leftclick(event):
     write_to_db()
-el.pack()
+el.pack(padx=2, pady=2)
 ei.pack()
-pl.pack()
+pl.pack(padx=2, pady=2)
 pi.pack()
-cp.pack()
+cp.pack(padx=2, pady=2)
 ci.pack()
-b.pack()
+b.pack(padx=20, pady=20)
 b.bind('<Button-1>', leftclick)
 root.mainloop()
