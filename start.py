@@ -11,9 +11,9 @@ root['bg'] = 'black'
 
 el = Label(root, text="What do you want to Do?", width=50, height=1, bg="black", fg='white', font='arial 14')
 
-b1 = Button(root, text="Sign Up!", width=9, height=1, bg='#808080', fg='white', font='arial 14')
+b1 = Button(root, text="Sign Up!", width=9, height=1, bg='white', fg='black', font='arial 14')
 
-b2 = Button(root, text="Log In!", width=9, height=1, bg='#808080', fg='white', font='arial 14')
+b2 = Button(root, text="Log In!", width=9, height=1, bg='white', fg='black', font='arial 14')
 
 
 def leftclick1(event):
